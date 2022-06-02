@@ -1,0 +1,52 @@
+
+.btn1{
+   
+    
+    background-color:#3f5bb8;
+    padding: 10px;
+    margin: 20px;
+    width: 20%;
+    border: hsl(223, 33%, 96%);
+    margin-left: 20%;
+    margin-top: 5%;
+    cursor:pointer;
+    border-radius: 3px;
+
+}
+.btn1:hover{
+    background-color: #2548b9;
+}
+.a1{
+    color: white;
+    font-size: 18px;
+}
+.a3{
+    font-size: 18px;
+    color: #0d52a0;
+    white-space: 20px;
+}
+.accordion-button{
+    margin-top: 5%;
+    
+    
+}
+.accordion-button:is(.collapsed) {
+    color: inherit;
+   
+    background: #324ead;
+}
+
+
+.accordion-button:hover{
+    background: #1638aa;
+}
+mat-icon{
+    color: white;
+}
+
+.chart-container{
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 20px;
+   
+}

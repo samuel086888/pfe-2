@@ -1,0 +1,15 @@
+th {
+  cursor: pointer;
+  background-color: coral;
+}
+
+.icon1{
+  margin-left: 30px;
+  
+  color: green
+}
+.icon2{
+  margin-left: 30px;
+  
+  color: red
+}

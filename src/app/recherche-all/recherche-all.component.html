@@ -1,0 +1,66 @@
+<!--butons de visualisation -->
+<button (click)="Visualisation()"  class="btn1"><mat-icon>donut_small</mat-icon><mat-label class="a1"> Visualisation des langues</mat-label></button>
+<button (click)="Visualisation2()" class="btn1"><mat-icon>bar_chart</mat-icon><mat-label class="a1"> Visualisation des dates </mat-label></button>
+    
+<!-- affichage des visualisations-->
+<div *ngIf="page==undefined ;then no else ok"></div>
+<ng-template #ok>
+<div class="chart-container">
+  <canvas id="canvas1" >{{ chart}}</canvas>
+</div>
+</ng-template>
+<ng-template #no> <canvas>  </canvas> </ng-template>
+
+ 
+<!--affichage du fichier json qui contients les enregistrements-->     
+<div class="accordion accordion-flush" id="accordionExample">
+  <div class="accordion-item">
+  <h2 class="accordion-header" id="headingTwo">
+    <button (click)="onSearchAll()" 
+    id="btn"  
+    class="accordion-button collapsed" 
+    type="button" data-bs-toggle="collapse"
+     data-bs-target="#collapseTwo" 
+       aria-expanded="false" 
+     aria-controls="collapseTwo">
+      <mat-label class="a1">Afficher les données</mat-label>
+    </button>
+  </h2>
+  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+    <div class="accordion-body">
+    <div *ngIf="page==undefined || page?.hits?.hits.length==0;then non else oui"></div>
+    <ng-template #oui>
+        <div class="container">
+           <div class="panel">   
+            <a class="a3">total:{{page?.hits?.hits.length}}</a>
+            <br>
+            <br>
+             
+            <div *ngFor="let a of page?.hits?.hits">
+              <!--les données-->
+          
+              <p><em>IdOwner</em> : {{a._source.idOwner}}</p>
+              <p><em>IdPost</em> : {{a._source.idPost}}</p>
+              <p><em>DateOfInsertion</em> : {{a._source.dateOfInsertion}}</p>
+              <p><em>DateOfPost</em> : {{a._source.dateOfPost}}</p>
+              <p><em>FormattedDateOfPost </em> : {{a._source.formattedDateOfPost}}</p>
+              <p><em>LangPost</em> : {{a._source.langPost}}</p>
+              <p><em>Content</em> : {{a._source.content}}</p>
+              <p><em>TreatedPost</em> : {{a._source.treatedPost}}</p>
+              <p><em>UrlPost</em> : {{a._source.urlPost}}</p><p>
+              <p><em>WebsiteUrl</em> : {{a._source.websiteUrl}}</p>
+              <br>
+              </div>
+                
+           </div>
+       </div>  
+       
+    </ng-template>
+    <ng-template #non>
+      aucunes données!!!
+    </ng-template>
+  </div>
+ 
+  </div>
+</div>
+ </div>

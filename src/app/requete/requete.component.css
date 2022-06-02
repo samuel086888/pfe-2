@@ -1,0 +1,101 @@
+
+
+
+
+mat-form-field{
+   
+    width: 100%;
+    
+   
+}
+.jumbotron{
+    margin-top: 6%;
+    background-color: white;
+}
+.row{
+    margin-top: 4%;
+}
+
+.btn2 {
+  
+    height: 60px;
+    width: 200px; 
+    background-color:#324ead;
+    border: hsl(223, 33%, 96%);
+    border-radius: 3px;
+    margin-top: 15%;
+
+}
+.btn2:hover{
+    background-color: #1139bd;
+ 
+}
+.btn2:disabled{
+    background-color:#5476e9; 
+
+}
+
+.btn3 {
+    background-color:#324ead;
+    border: hsl(223, 33%, 96%);
+    border-radius: 3px;
+    padding: 10px;
+    width: 12%;
+    margin: 50px;
+    
+}
+.btn3:hover{
+  background-color: #1139bd;
+}
+.btn3:disabled{
+    background-color:#5476e9; 
+}
+
+.col{
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+.accordion-button{
+    margin-top: 6%;
+}
+.accordion-button:is(.collapsed) {
+    color: inherit;
+   
+    background: #324ead;
+}
+
+.accordion-button:hover{
+    background-color:#1336ac;
+}
+
+.a1{
+    color: white;
+    
+}
+.a2{
+    color: white;
+    font-size: 18px;
+    
+}
+.a3{
+    font-size: 18px;
+    color: #0d52a0;
+    white-space: 20px;
+}
+
+.icon1{
+    color: white;
+}
+.bt:hover{
+    background-color: #3f5bb8;
+}
+
+.chart-container{
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 30px;
+}
+.card-header{
+    background-color: #324ead;
+}

@@ -1,0 +1,88 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 20%;
+  background-color: #395fb1;
+}
+
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+
+
+
+.a:hover{
+  background-color: white;
+  color:black;
+  
+}
+.a{
+  border-color: #030711;
+  color: white;
+  font-size: 20px
+ 
+}
+.li{
+  margin-left: 80%;
+}
+.lo{
+  margin-left: 30%;
+}
+.bt1{
+  background-color:rgb(64, 206, 83);
+  border-radius: 7px;
+ margin-left: 70%;
+  width: 120px;
+  padding: 5px;
+ 
+ color: white;
+ border: hsl(223, 33%, 96%);
+}
+.bt1:hover{
+  background-color:rgb(11, 215, 38);
+  
+}
+.bt2{
+  background-color: rgb(17, 124, 177);
+  border-radius: 7px;
+ 
+  width: 120px;
+  padding: 5px;
+ color: white;
+ border: hsl(223, 33%, 96%);
+ margin-left: 50%;
+}
+
+
+.bt2:hover{
+  background-color:rgb(14, 135, 196) ;
+}
+
+.bt3{
+  background-color: rgb(177, 17, 39);
+  border-radius: 10px;
+ 
+  width: 120px;
+  padding: 5px;
+  margin-left: 30%;
+ color: white;
+ border: hsl(223, 33%, 96%);
+}
+
+
+.bt3:hover{
+  background-color:rgb(196, 14, 38) ;
+}
+
+.divnav{
+ margin-left: 70%;
+
+}
+.anav:hover{
+  color: #030711;
+}
+
